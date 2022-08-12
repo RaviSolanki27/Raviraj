@@ -1,0 +1,275 @@
+.title-font {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title-name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title-name::after {
+  content: "";
+  background-color: aqua;
+  opacity: 0.3;
+  /* display: block; */
+  position: relative;
+  width: 233px;
+  height: 1px;
+  margin: 0px auto;
+  left: 5%;
+  bottom: -1.1rem;
+}
+
+/* Loader CSS */
+
+.main-div {
+  width: 94%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10rem; */
+}
+
+.initial {
+  color: var(--primary);
+  position: relative;
+  left: 1.1rem;
+  opacity: 0;
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+  animation: mymove 0.7s infinite;
+  animation-delay: 3s;
+}
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.outdiv1,
+.outdiv2,
+.outdiv3,
+.indiv1,
+.indiv2,
+.indiv3 {
+  position: absolute;
+  width: 90px;
+  height: 51px;
+}
+.outdiv2 {
+  transform: rotate(60deg);
+}
+.outdiv3 {
+  transform: rotate(-60deg);
+}
+
+.indiv1,
+.indiv2,
+.indiv3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.span1,
+.span2,
+.span3,
+.span4,
+.span5,
+.span6 {
+  position: absolute;
+  width: 4px;
+  height: 0%;
+  background: var(--primary);
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+
+  z-index: 999999;
+}
+
+.h1 {
+  left: 0;
+  animation: load1 7.2s ease normal;
+}
+.h2 {
+  right: 0;
+  animation: load2 7.2s ease 0.6s infinite;
+}
+.h3 {
+  right: 0;
+  animation: load3 7.2s ease 1.2s infinite;
+}
+.h4 {
+  right: 0;
+  animation: load4 7.2s ease 1.8s infinite;
+}
+.h5 {
+  left: 0;
+  animation: load5 7.2s ease 2.4s infinite;
+}
+.h6 {
+  left: 0;
+  animation: load6 7.2s ease 3s infinite;
+}
+
+/* ProjectCard CSS */
+
+.project-card:hover > :nth-child(2) > h6 {
+  color: #00e5e8;
+}
+
+
+
+.project-svg svg:hover {
+  stroke: #00e5e8;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1280px) {
+
+  .project-card-div{
+    width: 430px;
+  }
+} 
+@media only screen and (max-width: 1024px) {
+
+  .project-card-div{
+    width: 340px;
+  }
+} 
+
+@media only screen and (max-width: 990px) {
+
+  .project-card-div{
+    width: 600px;
+  }
+} 
+
+@keyframes load1 {
+  0% {
+    bottom: 0;
+    height: 0;
+  }
+  6.944444444% {
+    bottom: 0;
+    height: 100%;
+  }
+  50% {
+    top: 0;
+    height: 100%;
+  }
+  59.944444433% {
+    top: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{top:0;height:0%;} */
+}
+
+@keyframes load2 {
+  0% {
+    top: 0;
+    height: 0;
+  }
+  6.944444444% {
+    top: 0;
+    height: 100%;
+  }
+  50% {
+    bottom: 0;
+    height: 100%;
+  }
+  59.944444433% {
+    bottom: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{bottom:0;height:0%} */
+}
+
+@keyframes load3 {
+  0% {
+    top: 0;
+    height: 0;
+  }
+  6.944444444% {
+    top: 0;
+    height: 100%;
+  }
+  50% {
+    bottom: 0;
+    height: 100%;
+  }
+  59.94444443% {
+    bottom: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{bottom:0;height:0%;} */
+}
+
+@keyframes load4 {
+  0% {
+    top: 0;
+    height: 0;
+  }
+  6.944444444% {
+    top: 0;
+    height: 100%;
+  }
+  50% {
+    bottom: 0;
+    height: 100%;
+  }
+  59.94444443% {
+    bottom: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{bottom:0;height:0%;} */
+}
+
+@keyframes load5 {
+  0% {
+    bottom: 0;
+    height: 0;
+  }
+  6.944444444% {
+    bottom: 0;
+    height: 100%;
+  }
+  50% {
+    top: 0;
+    height: 100%;
+  }
+  59.94444443% {
+    top: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{top:0;height:0%;} */
+}
+
+@keyframes load6 {
+  0% {
+    bottom: 0;
+    height: 0;
+  }
+  6.944444444% {
+    bottom: 0;
+    height: 100%;
+  }
+  50% {
+    top: 0;
+    height: 100%;
+  }
+  59.94444443% {
+    top: 0;
+    height: 100%;
+  }
+  /*   91.6666667%{top:0;height:0%;} */
+}

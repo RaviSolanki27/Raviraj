@@ -1,0 +1,64 @@
+.email-text {
+  writing-mode: vertical-lr;
+  text-align: left;
+  /* display: flex; */
+  align-items: center;
+}
+.left-email-text {
+  position: fixed;
+  bottom: 90px;
+  left: 3%;
+}
+.right-email-text {
+  position: fixed;
+  bottom: 110px;
+  right: 3%;
+  color: #eee5;
+}
+.right-email-text:hover {
+  color: #00e5e8;
+  transform: translateY(-3px)
+}
+
+.right-email-text::after {
+  content: "";
+  background-color: #eee5;
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  bottom: -48%;
+  left: 40%;
+}
+.left-email-text::after {
+  content: "";
+  background-color: #eee5;
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  bottom: -32%;
+  right: 43%;
+}
+
+.left-email-text > ul > li > a > svg:hover {
+  stroke: #00e5e8;
+  stroke-width: 1;
+  transform: scale(1.5);
+  transition: ease-in-out;
+  transition-duration: 300ms;
+  box-shadow: 0 0 10px #00e5e8, 0 0 20px #00e5e8, 0 0 40px #00e5e8;
+  background: #00e5e8;
+  fill: black;
+  border-radius: 15%;
+  
+}
+.left-email-text > ul > li {
+  height: 1.5rem;
+  margin: 1rem 0;
+}
+.left-email-text > ul {
+  display: flex;
+}

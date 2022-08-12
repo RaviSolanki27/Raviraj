@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00e5e8;
+  --secondary: #eee5;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 0, 0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.glowText:hover {
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+}
+
+.compStyle {
+  @apply transition duration-500  px-3 py-5 rounded-md  border-l-0 border-b-4 md:border-l-4 md:border-b-0 text-sm min-w-[11rem] border-[#eee1] secondary hover:bg-[#00e4e810] hover:text-[#00e5e8];
+}
+.activeCompStyle {
+  @apply border-l-0 border-b-4 md:border-l-4 md:border-b-0 border-[#00e5e8] bg-[#00e4e810] text-[#00e5e8];
+}
+.primary {
+  @apply text-[#00e5e8];
+}
+.secondary {
+  @apply text-[#8892b0];
+}
+
+.roboto {
+  font-family: "Roboto";
+}
+
+/* Navbar CSS */
+

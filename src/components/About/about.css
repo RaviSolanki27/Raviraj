@@ -1,0 +1,90 @@
+.profile-img {
+  border-radius: 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.inner-img:hover {
+  filter: grayscale(0%);
+}
+.inner-img {
+  filter: grayscale(100%) contrast(1);
+  background-position: center;
+  background-color: #00e5e8;
+  border-radius: 5%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 5px;
+  z-index: 22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img:hover {
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+}
+
+.profile-img:hover::after {
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+  animation: animatereverse 3s linear infinite;
+}
+.profile-img:hover::before {
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
+    0 0 40px var(--primary);
+  animation: animatereverse 3s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.profile-img::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #00e5e8
+  );
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.profile-img::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #00e5e8
+  );
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animatereverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
