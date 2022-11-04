@@ -10,7 +10,6 @@
   content: "";
   background-color: aqua;
   opacity: 0.3;
-  /* display: block; */
   position: relative;
   width: 233px;
   height: 1px;
@@ -20,25 +19,30 @@
 }
 
 /* Loader CSS */
-
+.loader-outer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
 .main-div {
-  width: 94%;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10rem; */
 }
 
 .initial {
   color: var(--primary);
-  position: relative;
-  left: 1.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   opacity: 0;
   text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary),
     0 0 40px var(--primary);
@@ -126,33 +130,27 @@
   color: #00e5e8;
 }
 
-
-
 .project-svg svg:hover {
   stroke: #00e5e8;
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1280px) {
-
-  .project-card-div{
+  .project-card-div {
     width: 430px;
   }
-} 
+}
 @media only screen and (max-width: 1024px) {
-
-  .project-card-div{
+  .project-card-div {
     width: 340px;
   }
-} 
+}
 
 @media only screen and (max-width: 990px) {
-
-  .project-card-div{
+  .project-card-div {
     width: 600px;
   }
-} 
+}
 
 @keyframes load1 {
   0% {
