@@ -13,7 +13,13 @@ function App() {
     }, 3910);
   }, []);
 
-  return <div className="App">{loading ? <Loader /> : <Homepage />}</div>;
+  return <div className="App">
+    <div id="box"></div>
+
+    {loading ? <Loader /> : <Homepage />}
+
+
+  </div>;
 }
 
 export default App;

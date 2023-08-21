@@ -84,10 +84,3 @@ export const About = () => {
   );
 };
 
-{
-  /* <img
-                  className="img-p"
-                  src="https://avatars.githubusercontent.com/u/74584237?v=4"
-                  alt=""
-                /> */
-}

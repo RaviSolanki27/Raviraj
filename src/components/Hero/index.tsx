@@ -1,4 +1,4 @@
-import { Bodypart } from "../BodyPart/Bodypart";
+import { Bodypart } from "../BodyPart";
 import "./hero.css";
 
 export const Hero = () => {
