@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Raviraj/static/css/main.0dbc05e6.css",
+    "main.js": "/Raviraj/static/js/main.5585169f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Raviraj/static/js/787.1ed0c42c.chunk.js",
+    "static/media/RavirajResume.pdf": "/Raviraj/static/media/RavirajResume.7116dc67ed39bf12011d.pdf",
+    "static/media/ravi1.png": "/Raviraj/static/media/ravi1.eb5a32ed6d8d5575f782.png",
+    "index.html": "/Raviraj/index.html",
+    "static/media/Polygon.svg": "/Raviraj/static/media/Polygon.1cc57f1ae1db7162b1b3ca763fb9ac12.svg",
+    "main.0dbc05e6.css.map": "/Raviraj/static/css/main.0dbc05e6.css.map",
+    "main.5585169f.js.map": "/Raviraj/static/js/main.5585169f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Raviraj/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dbc05e6.css",
+    "static/js/main.5585169f.js"
+  ]
+}
